@@ -1,0 +1,123 @@
+.card {
+  margin: 100px auto;
+  width: 400px;
+
+  border: 1px solid #eeeeee;
+}
+
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.card-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-img-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+
+  display: flex;
+  align-items: center;
+  padding: 63px 24px;
+
+  font-size: 19px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  /* background-color: rgba(145, 148, 150, 0.2); */
+
+  transition: transform 250ms cubic-bezier(0.4, 0.2, 0, 1);
+}
+
+.card:hover img {
+  filter: blur(4px);
+}
+
+.card:hover .card-img-content {
+  transform: translateY(0);
+}
+.card:hover .card__action-top,
+.card:hover .card__action-bottom {
+  transform: translateY(0);
+  /* transition: transform 250ms cubic-bezier(0.4, 0.2, 0, 1) 250ms; */
+}
+
+.card:hover .card__action-top {
+  transition: transform 250ms cubic-bezier(0.4, 0.2, 0, 1) 250ms;
+}
+.card:hover .card__action-bottom {
+  transition: transform 250ms cubic-bezier(0.4, 0.2, 0, 1) 500ms;
+}
+.card__action-top,
+.card__action-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+
+  width: 100%;
+  height: 100px;
+  background-color: rgb(238, 238, 238, 0.5);
+
+  transition: transform 250ms cubic-bezier(0.4, 0.2, 0, 1) 0ms;
+}
+
+.card__action-top {
+  top: 0;
+  transform: translateY(-100%);
+}
+.card__action-bottom {
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.card__action-top:hover,
+.card__action-bottom:hover {
+  transform: translateY(0);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.btn:hover {
+  fill: #2196f3;
+  background-color: #ffffff;
+}
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.card-content {
+  padding: 0 20px;
+}
+.card-description {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.6em;
+}
+
+.card-type {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}

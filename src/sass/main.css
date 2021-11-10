@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+input {
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* poppins-regular - devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v15-devanagari-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/poppins-v15-devanagari-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v15-devanagari-regular.woff2") format("woff2"), url("../fonts/poppins-v15-devanagari-regular.woff") format("woff"), url("../fonts/poppins-v15-devanagari-regular.ttf") format("truetype"), url("../fonts/poppins-v15-devanagari-regular.svg#Poppins") format("svg");
+  /* Legacy iOS */
+}
+
+/* poppins-700 - devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v15-devanagari-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/poppins-v15-devanagari-700.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v15-devanagari-700.woff2") format("woff2"), url("../fonts/poppins-v15-devanagari-700.woff") format("woff"), url("../fonts/poppins-v15-devanagari-700.ttf") format("truetype"), url("../fonts/poppins-v15-devanagari-700.svg#Poppins") format("svg");
+  /* Legacy iOS */
+}
+
+.logo__link-list {
+  text-decoration: none;
+}
+
+.logo__link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #22262a;
+}
+
+@media screen and (min-width: 768px) {
+  .logo__link {
+    font-size: 28px;
+  }
+}
+
+.header {
+  position: relative;
+  padding-top: 20px;
+}
+
+.btn__burger {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: auto;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn__burger.is-open .icon__closes {
+  display: block;
+}
+
+.btn__burger.is-open .icon__open {
+  display: none;
+}
+
+.icon__closes {
+  display: none;
+}
+
+.navigation__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background-color: antiquewhite;
+  list-style: none;
+}
+
+.navigation__menu.is-open {
+  display: block;
+}
+
+.navigation__menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 50px;
+}
+
+.menu__list-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #22262a;
+}
+
+.hero {
+  padding: 50px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  background-color: #f2ae4d;
+}
+
+.hero__title {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.hero__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 19px;
+  min-width: 135px;
+  font-size: 14px;
+  line-height: 1.29em;
+  letter-spacing: 1.96px;
+  color: #ffffff;
+  background-color: #3d5675;
+  border-radius: 44px;
+  text-transform: uppercase;
+}
+
+.hero__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin: -7px;
+}
+
+.hero__card-item {
+  margin: 7px;
+  width: 80px;
+  height: 70px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.list {
+  text-decoration: none;
+  list-style: none;
+}
+/*# sourceMappingURL=main.css.map */

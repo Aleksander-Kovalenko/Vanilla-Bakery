@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    /> -->
+  </head>
+  <body>
+    <header class="header header-flex">
+      <div class="container">
+        <div class="flex__container">
+          <h1 class="header__logo">
+            <a href="" class="logo__link logo__link-list">vanilla bakery</a>
+          </h1>
+          <button class="btn__burger" type="button">
+            <svg width="40" height="40" aria-label="Переключатель моильного меню">
+              <use
+                class="icon__closes js__icon-close"
+                href="./images/icons/sprite.svg#icon-cross"
+              ></use>
+              <use
+                class="icon__open js__icon-open"
+                href="./images/icons/sprite.svg#icon-open-burger"
+              ></use>
+            </svg>
+          </button>
+          <nav class="navigation__menu">
+            <ul class="navigation__menu-list">
+              <li class="menu__list-item"><a class="menu__list-link" href="">головна</a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="">доставка</a></li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="">каталог десертів</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="">створити десертів</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="">блог</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__body">
+            <div class="">
+              <h2 class="hero__title">
+                Time for your <br />
+                sweet dream
+              </h2>
+              <a class="hero__btn" href="#"
+                >створити
+                <svg width="20" height="20">
+                  <use href="./images/icons/sprite.svg#icon-magic"></use>
+                </svg>
+              </a>
+            </div>
+
+            <ul class="hero__card-list">
+              <li class="hero__card-item">
+                <img
+                  width="80"
+                  height="70"
+                  class="hero__card-img"
+                  src="./images/hero/127092169_699463250700140_3656031347110911141_n.jpg"
+                  alt=""
+                />
+              </li>
+              <li class="hero__card-item">
+                <img
+                  width="80"
+                  height="70"
+                  class="hero__card-img"
+                  src="./images/hero/135235465_155827349632706_2808462665854251497_n.jpg"
+                  alt=""
+                />
+              </li>
+              <li class="hero__card-item">
+                <img
+                  width="80"
+                  height="70"
+                  class="hero__card-img"
+                  src="./images/hero/nabor.jpg"
+                  alt=""
+                />
+              </li>
+              <li class="hero__card-item">
+                <img
+                  width="80"
+                  height="70"
+                  class="hero__card-img"
+                  src="./images/hero/109010279_869226350269351_580298589923326757_n.jpg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- about us -->
+      <!-- <section>
+        <div>
+          <ul>
+            <li>
+              <article>
+                <h3>Набори</h3>
+                <img src="./images/about/nabor.jpg" alt="" height="400px" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptatibus,
+                  doloremque deserunt, tenetur quod non commodi dicta illum culpa sapiente repellat
+                  ducimus ipsum. Deleniti dolores commodi delectus omnis maxime natus?
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Святкові дні</h3>
+                <img src="./images/about/merriedDay.jpg" alt="" height="400px" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptatibus,
+                  doloremque deserunt, tenetur quod non commodi dicta illum culpa sapiente repellat
+                  ducimus ipsum. Deleniti dolores commodi delectus omnis maxime natus?
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Визначні дні Держави та Світу в цілому</h3>
+                <img src="./images/about/pascha.jpg" alt="" height="400px" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptatibus,
+                  doloremque deserunt, tenetur quod non commodi dicta illum culpa sapiente repellat
+                  ducimus ipsum. Deleniti dolores commodi delectus omnis maxime natus?
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Candy Bar</h3>
+                <img src="./images/about/candybar.jpg" alt="" height="400px" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat voluptatibus,
+                  doloremque deserunt, tenetur quod non commodi dicta illum culpa sapiente repellat
+                  ducimus ipsum. Deleniti dolores commodi delectus omnis maxime natus?
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

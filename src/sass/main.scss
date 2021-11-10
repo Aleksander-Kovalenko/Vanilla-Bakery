@@ -1,0 +1,23 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
+@import './base/general';
+@import './base/container';
+@import './base/flex';
+@import './base/fonts';
+// @import './components/card';
+@import './layout/logo';
+@import './layout/header';
+@import './components/menu-nav';
+@import './layout/hero';
+@import './base/untils';
+// header {
+//   background-image: url(../images/banner.jpg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   min-height: 50vh;
+// }
