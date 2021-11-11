@@ -10,9 +10,11 @@
 
 .hero__title {
   margin-bottom: 40px;
+
   font-size: 17px;
   line-height: 1.5em;
   text-transform: uppercase;
+  color: #22262a;
 }
 
 .hero__btn {
@@ -56,13 +58,4 @@
 
   border-radius: 10px;
   overflow: hidden;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.hero__card-item svg {
-  font-weight: 700;
 }
