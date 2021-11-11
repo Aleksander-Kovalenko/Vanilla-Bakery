@@ -1,5 +1,7 @@
 .hero {
+  position: relative;
   padding: 50px 0;
+  height: 100vh;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   background-image: url('../images/hero/header-image.png');
@@ -37,10 +39,10 @@
 }
 
 .hero__body {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero__card-list {
