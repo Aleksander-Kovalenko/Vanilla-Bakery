@@ -37,11 +37,16 @@
 }
 
 .divider {
-  height: 2px;
+  margin: 0 auto;
+  // height: 2px;
   overflow: hidden;
-  background-color: black;
-  padding: 20px 0;
+  // background-color: black;
+  padding: 10px 0;
 }
+.divider svg {
+  margin-right: 15px;
+}
+
 .container-contacts {
   width: 100%;
 }
