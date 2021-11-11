@@ -9,4 +9,4 @@ const e=document.querySelector(".btn__burger"),t=document.querySelector(".naviga
 },{"./gerRefs":"w2eK"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/burger-menu"),require("./js/theme");
 },{"./sass/main.scss":"clu1","./js/burger-menu":"w7zl","./js/theme":"qwQt"}]},{},["Focm"], null)
-//# sourceMappingURL=/Vanilla-Bakery/src.f4bf0530.js.map
+//# sourceMappingURL=/Vanilla-Bakery/src.5bc0d123.js.map
