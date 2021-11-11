@@ -5,4 +5,4 @@ const e=document.querySelector(".btn__burger"),t=document.querySelector(".naviga
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/burger-menu");
 },{"./sass/main.scss":"clu1","./js/burger-menu":"w7zl"}]},{},["Focm"], null)
-//# sourceMappingURL=/Vanilla-Bakery/src.8b5fa8b6.js.map
+//# sourceMappingURL=/Vanilla-Bakery/src.71a4149b.js.map
