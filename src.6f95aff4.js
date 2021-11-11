@@ -2,7 +2,11 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{"./../fonts/poppins-v15-devanagari-regular.eot":[["poppins-v15-devanagari-regular.eb406b21.eot","E73Q"],"E73Q"],"./../fonts/poppins-v15-devanagari-regular.woff2":[["poppins-v15-devanagari-regular.1e3eda40.woff2","Cxz5"],"Cxz5"],"./../fonts/poppins-v15-devanagari-regular.woff":[["poppins-v15-devanagari-regular.2a62ee0e.woff","mV7n"],"mV7n"],"./../fonts/poppins-v15-devanagari-regular.ttf":[["poppins-v15-devanagari-regular.97697beb.ttf","hOTw"],"hOTw"],"./../fonts/poppins-v15-devanagari-regular.svg":[["poppins-v15-devanagari-regular.7f044cd6.svg","yFPh"],"yFPh"],"./../fonts/poppins-v15-devanagari-700.eot":[["poppins-v15-devanagari-700.5e29c706.eot","NcxT"],"NcxT"],"./../fonts/poppins-v15-devanagari-700.woff2":[["poppins-v15-devanagari-700.3e15f961.woff2","pGNZ"],"pGNZ"],"./../fonts/poppins-v15-devanagari-700.woff":[["poppins-v15-devanagari-700.acdbf56a.woff","Qu53"],"Qu53"],"./../fonts/poppins-v15-devanagari-700.ttf":[["poppins-v15-devanagari-700.695bbdda.ttf","qVTC"],"qVTC"],"./../fonts/poppins-v15-devanagari-700.svg":[["poppins-v15-devanagari-700.39e09f5d.svg","JyQ3"],"JyQ3"],"./../images/hero/header-image.png":[["header-image.34cad808.png","tT4c"],"tT4c"]}],"w7zl":[function(require,module,exports) {
 const e=document.querySelector(".btn__burger"),t=document.querySelector(".navigation__menu");function n(n){n.preventDefault(),e.classList.toggle("is-open"),t.classList.toggle("is-open")}e.addEventListener("click",n);
-},{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./js/burger-menu");
-},{"./sass/main.scss":"clu1","./js/burger-menu":"w7zl"}]},{},["Focm"], null)
-//# sourceMappingURL=/Vanilla-Bakery/src.a6c7f6fc.js.map
+},{}],"w2eK":[function(require,module,exports) {
+"use strict";function e(){return{theme:document.querySelector("#theme-switch-toggle")}}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var t=e;exports.default=t;
+},{}],"qwQt":[function(require,module,exports) {
+"use strict";var e=t(require("./gerRefs"));function t(e){return e&&e.__esModule?e:{default:e}}const d={LIGHT:"light-theme",DARK:"dark-theme"},n=(0,e.default)();function c(){document.body.classList.remove(d.LIGHT),document.body.classList.add(d.DARK),s(d.DARK)}function o(){document.body.classList.remove(d.DARK),document.body.classList.add(d.LIGHT),s(d.LIGHT)}function s(e){localStorage.theme=e}n.theme.addEventListener("change",e=>{if(e.preventDefault(),!e.target.checked)return o();c()});
+},{"./gerRefs":"w2eK"}],"Focm":[function(require,module,exports) {
+"use strict";require("./sass/main.scss"),require("./js/burger-menu"),require("./js/theme");
+},{"./sass/main.scss":"clu1","./js/burger-menu":"w7zl","./js/theme":"qwQt"}]},{},["Focm"], null)
+//# sourceMappingURL=/Vanilla-Bakery/src.6f95aff4.js.map
