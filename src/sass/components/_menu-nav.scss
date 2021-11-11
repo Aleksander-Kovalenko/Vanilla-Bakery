@@ -8,6 +8,8 @@
 
   background-color: antiquewhite;
   list-style: none;
+
+  z-index: 1;
   &.is-open {
     display: block;
   }

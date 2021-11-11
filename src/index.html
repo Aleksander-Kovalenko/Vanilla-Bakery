@@ -17,6 +17,31 @@
     /> -->
   </head>
   <body>
+    <div class="toolbar container">
+      <!-- Разметка переключателя темы -->
+      <div class="theme-switch">
+        <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
+          <use href="./images/icons/sprite.svg#sun"></use>
+        </svg>
+
+        <div class="theme-switch__control">
+          <input
+            class="theme-switch__toggle"
+            type="checkbox"
+            name="theme"
+            id="theme-switch-toggle"
+            aria-label="Переключить между тёмной и светлой темой"
+          />
+          <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle"> </label>
+          <div aria-hidden="true" class="theme-switch__marker"></div>
+        </div>
+
+        <svg class="theme-switch__icon" aria-label="Иконка луны">
+          <use href="./images/icons/sprite.svg#moon"></use>
+        </svg>
+      </div>
+    </div>
+
     <header class="header header-flex">
       <div class="container">
         <div class="flex__container">
@@ -97,6 +122,37 @@
             </ul>
           </div>
         </div>
+      </section>
+
+      <section class="advantages">
+        <ul>
+          <li>
+            <svg>
+              <use></use>
+            </svg>
+            <h3>Сплануй свято для свої рідних</h3>
+            <p>Можливість бронювання місця на важливі для вас дні</p>
+          </li>
+          <li>
+            <svg>
+              <use></use>
+            </svg>
+            <h3></h3>
+            <p></p>
+          </li>
+          <li>
+            <svg>
+              <use></use>
+            </svg>
+            <p></p>
+          </li>
+          <li>
+            <svg>
+              <use></use>
+            </svg>
+            <p></p>
+          </li>
+        </ul>
       </section>
       <!-- about us -->
       <!-- <section>
