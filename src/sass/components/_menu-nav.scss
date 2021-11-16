@@ -66,8 +66,9 @@
 
 /*------WRAPPER---*/
 .wrapper{
-  min-height: 100%;
-  overflow: hidden;
+  // min-height: 100%;
+  // overflow: hidden;
+  padding: 0 15px
 }
 ._container{
   max-width: 1040px;
@@ -77,15 +78,18 @@
 
 
 .header {
+  @media screen and (max-width:767px) {
+    position: relative;
+  }
 
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
-
-
+  align-items: center;
 }
+
 .header__logo {
   font-family: 'Dosis', sans-serif;
   font-weight: 700;
@@ -94,11 +98,23 @@
 
   text-transform: uppercase;
 }
+
 .btn__burger {
-  display: none;
+  display: block;
+ @media screen and (min-width: 768px) {
+   display: none;
+ }
 }
+
 .header__menu {
 
+  @media screen and (max-width:767px) {
+    position: absolute;
+    left: 0;
+    top: 100%;    
+
+    z-index: 10;
+  }
 }
 .theme-switch__toggle {
 }
@@ -106,20 +122,66 @@
 }
 .theme-switch__marker {
 }
+
 .menu__list {
-  display: flex;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .icon__closes.js__icon-close {
 }
 .icon__open.js__icon-open {
 }
+
 .menu__item {
+ 
+ @media screen and (min-width:768px) {
+  &:not(:last-child){
+    margin-right: 10px;
+  }
+ }
+
+ @media screen and (max-width:767px) {
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+ }
 }
+
 .menu__item.divider {
+  text-align: center;
+  @media screen and (min-width:768px) {
+    display: none;
+  }
 }
 .menu__link {
 }
+
 .menu__contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width:768px) {
+    flex-wrap: wrap;
+  }
 }
+
 .menu__contacts-item {
+  @media screen and (max-width:767px) {
+    &:not(:last-child){
+      margin-right: 5px;
+    }    
+
+    svg{
+      width: 25px;
+      height: 25px;
+    }
+  }
+  @media screen and (min-width:768px) {
+    flex-basis: 50%;
+    text-align: center;
+    vertical-align: middle;
+  }
 }
