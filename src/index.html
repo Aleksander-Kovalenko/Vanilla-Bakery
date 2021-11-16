@@ -10,83 +10,70 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /> -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    /> -->
   </head>
   <body>
-    <div class="toolbar container">
-      <!-- Разметка переключателя темы -->
-      <div class="theme-switch">
-        <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
-          <use href="./images/icons/sprite.svg#icon-ligth-Doughnut_705968"></use>
-        </svg>
-
-        <div class="theme-switch__control">
-          <input
-            class="theme-switch__toggle"
-            type="checkbox"
-            name="theme"
-            id="theme-switch-toggle"
-            aria-label="Переключить между тёмной и светлой темой"
-          />
-          <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle"> </label>
-          <div aria-hidden="true" class="theme-switch__marker"></div>
+    <div class="wrapper">
+      <div class="toolbar _container">
+        <!-- Разметка переключателя темы -->
+        <div class="theme-switch">
+          <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
+            <use href="./images/icons/sprite.svg#icon-ligth-Doughnut_705968"></use>
+          </svg>
+  
+          <div class="theme-switch__control">
+            <input
+              class="theme-switch__toggle"
+              type="checkbox"
+              name="theme"
+              id="theme-switch-toggle"
+              aria-label="Переключить между тёмной и светлой темой"
+            />
+            <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle"> </label>
+            <div aria-hidden="true" class="theme-switch__marker"></div>
+          </div>
+  
+          <svg class="theme-switch__icon" aria-label="Иконка луны">
+            <use href="./images/icons/sprite.svg#icon-dark-Doughnut_705969"></use>
+          </svg>
         </div>
-
-        <svg class="theme-switch__icon" aria-label="Иконка луны">
-          <use href="./images/icons/sprite.svg#icon-dark-Doughnut_705969"></use>
-        </svg>
       </div>
-    </div>
+      
 
-    <header class="header header-flex">
-      <div class="container">
-        <div class="flex__container">
-          <h1 class="header__logo">
-            <a href="" class="logo__link logo__link-list">vanilla bakery</a>
-          </h1>
-          <button class="btn__burger" type="button">
-            <svg width="40" height="40" aria-label="Переключатель моильного меню">
-              <use
-                class="icon__closes js__icon-close"
-                href="./images/icons/sprite.svg#icon-burger-cross"
-              ></use>
+      <header class="header">
+      <div class="header__container _container">
+        <a href="#" class="header__logo">vanilla bakery</a>
+        <button class="btn__burger" type="button">
+          <svg width="40" height="40" aria-label="Переключатель моильного меню">
+            <use class="icon__closes js__icon-close" 
+            href="./images/icons/sprite.svg#icon-burger-cross"></use>
               <use
                 class="icon__open js__icon-open"
                 href="./images/icons/sprite.svg#icon-burger-menu"
               ></use>
             </svg>
           </button>
-          <nav class="navigation__menu">
-            <ul class="navigation__menu-list">
-              <li class="menu__list-item"><a class="menu__list-link" href="">головна</a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="">доставка</a></li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="">каталог десертів</a>
+          <nav class="header__menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="">головна</a></li>
+              <li class="menu__item"><a class="menu__link" href="">доставка</a></li>
+              <li class="menu__item">
+                <a class="menu__link" href="">каталог десертів</a>
               </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="">створити десерт</a>
+              <li class="menu__item">
+                <a class="menu__link" href="">блог</a>
               </li>
-              <li class="menu__list-item">
-                <a class="menu__list-link" href="">блог</a>
+              <li class="menu__item divider">
+                <svg width="20" height="20">
+                  <use href="./images/icons/sprite.svg#icon-menu-macaron"></use>
+                </svg>
+                <svg width="20" height="20">
+                  <use href="./images/icons/sprite.svg#icon-menu-macaron"></use>
+                </svg>
+                <svg width="20" height="20">
+                  <use href="./images/icons/sprite.svg#icon-menu-macaron"></use>
+                </svg>
               </li>
-              <li class="menu__list-item divider">
-                <div class="divider">
-                  <svg width="20" height="20">
-                    <use href="./images/icons/sprite.svg#icon-menu-macaron"></use>
-                  </svg>
-                  <svg width="20" height="20">
-                    <use href="./images/icons/sprite.svg#icon-menu-macaron"></use>
-                  </svg>
-                  <svg width="20" height="20">
-                    <use href="./images/icons/sprite.svg#icon-menu-macaron"></use>
-                  </svg>
-                </div>
-              </li>
-              <li class="container-contacts">
+              <li class="menu__item">
                 <ul class="menu__contacts">
                   <li class="menu__contacts-item">
                     <a href="https://instagram.com/vanilla.bakery_?utm_medium=copy_link"
@@ -109,50 +96,19 @@
                   <li class="menu__contacts-item">
                     <a href="tel:+38073440675"
                       ><svg width="30" height="30">
-                        <use href="./images/icons/sprite.svg#icon-phone"></use></svg
-                    ></a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
-            <!-- <div>
-              <ul>
-                <h3>Контакти</h3>
-                <li>
-                  <a href=""
-                    ><svg idth="40" height="40">
-                      <use href="./images/icons/sprite.svg#icon-burger-instagram"></use></svg
-                  ></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><svg idth="40" height="40">
-                      <use href="./images/icons/sprite.svg#icon-telegram"></use></svg
-                  ></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><svg idth="40" height="40">
-                      <use href="./images/icons/sprite.svg#icon-whatsapp"></use></svg
-                  ></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><svg idth="40" height="40">
-                      <use href="./images/icons/sprite.svg#icon-burger-phone"></use></svg
-                  ></a>
+                        <use href="./images/icons/sprite.svg#icon-phone"></use></svg>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
-            </div> -->
-          </nav>
-        </div>
+            </nav>
+          </div>
+        </header>
       </div>
-    </header>
-
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <div class="hero__body">
             <ul class="hero__card-list">
@@ -193,38 +149,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="advantages">
-        <ul>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <h3>Сплануй свято для свої рідних</h3>
-            <p>Можливість бронювання місця на важливі для вас дні</p>
-          </li>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <h3></h3>
-            <p></p>
-          </li>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <p></p>
-          </li>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <p></p>
-          </li>
-        </ul>
-      </section>
+    
       <!-- about us -->
       <!-- <section>
         <div>
@@ -277,6 +204,6 @@
         </div>
       </section> -->
     </main>
-    <script src="./index.js"></script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
