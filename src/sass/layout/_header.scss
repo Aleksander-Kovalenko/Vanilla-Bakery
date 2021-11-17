@@ -1,27 +1,49 @@
-.btn__burger {
-  display: inline-flex;
-  width: 40px;
-  height: 40px;
+// .btn__burger {
+//   display: inline-flex;
+//   width: 40px;
+//   height: 40px;
 
-  padding: 0;
-  margin-left: auto;
+//   padding: 0;
+//   margin-left: auto;
 
-  color: currentColor;
-  background-color: transparent;
-  outline: none;
-  border: none;
+//   color: currentColor;
+//   background-color: transparent;
+//   outline: none;
+//   border: none;
 
-  cursor: pointer;
+//   cursor: pointer;
 
-  &.is-open .icon__closes {
-    display: block;
-  }
+//   &.is-open .icon__closes {
+//     display: block;
+//   }
 
-  &.is-open .icon__open {
-    display: none;
+//   &.is-open .icon__open {
+//     display: none;
+//   }
+// }
+
+// .icon__closes {
+//   display: none;
+// }
+
+
+.header {
+  @media screen and (max-width:767px) {
+    position: relative;
   }
 }
 
-.icon__closes {
-  display: none;
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5em;
+
+  text-transform: uppercase;
 }

@@ -1,0 +1,23 @@
+.icon__closes{
+    display: none;
+}
+
+.btn__burger {
+    padding: 0;
+    background-color: inherit;
+    border: none;
+
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+     display: none;
+   }
+
+   &.is-open .icon__closes{
+       display: block;
+   }
+
+   &.is-open .icon__open{
+       display: none;
+   }
+  }
